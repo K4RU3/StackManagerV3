@@ -1,0 +1,51 @@
+@font-face {
+    font-family: "Main-medium";
+    src: url("src/Zen_Kaku_Gothic_New/ZenKakuGothicNew-Medium.ttf");
+}
+
+html{
+    font-family: "Main-medium";
+}
+
+#reload{
+    display: block;
+    position: fixed;
+    width: 30px;
+    top: 10px;
+    left: 10px;
+    transform: rotateZ(45deg);
+}
+
+#season{
+    text-align: center;
+}
+
+#summaryText{
+    text-align: center;
+    margin: auto;
+}
+
+#summary{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    width: 100%;
+    margin: auto;
+}
+
+.container{
+    margin: 5%;
+    box-sizing: border-box;
+    border-radius: 10px;
+    background-color: #f0f2f4;
+    min-height: 13vh;
+    text-align: left;
+    padding-top: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.container > h2{
+    text-align: left;
+    padding: none;
+    margin-top: -10px;
+}

@@ -8,7 +8,7 @@
 </head>
 <body>
     <script>
-        if(new URLSearchParams(new URL(location.href).search).has("code")){
+        if(new URLSearchParams((url = new URL(location.href)).search).has("code")){
             location.href = url.origin + "/view"
         }else{
             location.href = "https://accounts.google.com/o/oauth2/v2/auth?client_id=468941619364-nc5sb62cnajv612at4ban0omvb3fa0s9.apps.googleusercontent.com&redirect_uri=https://k4ru3.github.io/StackManagerV3/login&response_type=code&scope=openid email profile"

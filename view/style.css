@@ -7,15 +7,6 @@ html{
     font-family: "Main-medium";
 }
 
-#reload{
-    display: block;
-    position: fixed;
-    width: 30px;
-    top: 10px;
-    left: 10px;
-    transform: rotateZ(45deg);
-}
-
 #season{
     text-align: center;
 }

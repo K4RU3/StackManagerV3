@@ -139,8 +139,6 @@ function setNetworkData(data){
             }
         }
     })
-
-    console.log(ranking)
 }
 
 setNetworkData(networkdata)

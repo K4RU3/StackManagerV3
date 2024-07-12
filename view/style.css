@@ -5,13 +5,33 @@
 
 html{
     font-family: "Main-medium";
+    user-select: none;
 }
 
 #season{
     text-align: center;
+    margin: 5%;
 }
 
-#summaryText{
+#graph{
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    align-items: center;
+    margin-bottom: 5%;
+}
+
+@media screen and (min-width: 1024px) {
+    #graph {
+        grid-template-columns: repeat(2, 1fr);
+        width: 50%;
+    }
+}
+
+.graphCanvas{
+    width: 100%;
+}
+
+#summaryText, #ranking{
     text-align: center;
     margin: auto;
 }
@@ -21,6 +41,12 @@ html{
     grid-template-columns: repeat(2, 1fr);
     width: 100%;
     margin: auto;
+}
+
+@media screen and (min-width: 1024px) {
+    #summary {
+        grid-template-columns: repeat(4, 1fr);
+    }
 }
 
 .container{
@@ -39,4 +65,34 @@ html{
     text-align: left;
     padding: none;
     margin-top: -10px;
+}
+
+#ranking{
+    background-color: white;
+}
+
+.container > h2 > span{
+    font-size: small
+}
+
+.container > h2 > span.up{
+    color: #078838;
+}
+.container > h2 > span.down{
+    color: #b32c2c;
+}
+
+#cover{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.417);
+    opacity: 1;
+    transition: opacity 1s ease-in;
+}
+
+#cover.hide{
+    opacity: 0;
 }

@@ -9,17 +9,27 @@
 </head>
 <body>
     <h1 id="season">2024 Summer Season</h1>
+    <hr>
+    <h3>チャート</h3>
+    <div id="graph">
+        <canvas id="transition" class="graphCanvas"></canvas>
+        <canvas id="ratio" class="graphCanvas"></canvas>
+    </div>
+    <hr>
     <div id="summary">
         <h2 id="summaryText">summary</h2>
-        <div class="container" id="stack"><p>Stack</p><h2></h2></div>
-        <div class="container" id="star"><p>Star</p><h2>★1</h2></div>
-        <div class="container" id="average"><p>Average</p><h2></h2></div>
-        <div class="container" id="median"><p>Median</p><h2></h2></div>
-        <div class="container" id="maximum"><p>Maximum</p><h2></h2></div>
-        <div class="container" id="minimum"><p>Minimum</p><h2></h2></div>
-        <div class="container" id="debt"><p>debt</p><h2></h2></div>
+        <div class="container" id="stack"><p>スタック</p><h2></h2></div>
+        <div class="container" id="star"><p>殿堂入り</p><h2></h2></div>
+        <div class="container" id="average"><p>平均</p><h2></h2></div>
+        <div class="container" id="median"><p>中央値</p><h2></h2></div>
+        <div class="container" id="maximum"><p>最大値</p><h2></h2></div>
+        <div class="container" id="minimum"><p>最小値</p><h2></h2></div>
+        <div class="container" id="debt"><p>借金</p><h2></h2></div>
     </div>
+    <hr>
+    <canvas id="rankingChart"></canvas>
 
     <script src="script.js"></script>
+    <div id="cover" class="hide"></div>
 </body>
 </html>
